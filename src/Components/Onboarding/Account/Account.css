@@ -1,0 +1,608 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  width: 648px;
+  height: 100%;
+  left: calc(50% - 648px / 2);
+  top: calc(50% - 704px / 2);
+}
+
+.theme-dark .container {
+  background-color: #151b28;
+}
+
+.logo {
+  width: 192px;
+  height: 48px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.theme-dark .logo {
+  filter: invert(100%);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 0px auto;
+  gap: 32px;
+  width: 648px;
+  background: #ffffff;
+  border: 1px solid #dae0e6;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.theme-dark .details {
+  background-color: #1c2534;
+  border: 1px solid #151b28;
+  box-shadow: none;
+}
+
+.details .upperSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 24px 48px;
+  gap: 10px;
+  height: 108px;
+  background: #fafbfc;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.theme-dark .details .upperSection {
+  background-color: #252d3c;
+}
+
+.stepper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 552px;
+  height: 60px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.stepper .baseStepper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  position: relative;
+  top: 20%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.stepper .dividerStepper {
+  width: 133.33px;
+  height: 32px;
+  flex: none;
+  flex-grow: 1;
+}
+
+.dividerStepper .divider {
+  position: relative;
+  height: 0px;
+  left: 0px;
+  right: 0.33px;
+  top: calc(50% - 0px / 2);
+  border: 2px dashed #dae0e6;
+}
+
+.baseStepper .icons {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 32px;
+  height: 32px;
+
+  /* Base/White */
+
+  background: white;
+  /* Primary/400 */
+
+  border: 1px solid #648ef7;
+  color: #437ef7;
+  border-radius: 20px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.icons > svg {
+  font-size: 18px;
+}
+
+.theme-dark .baseStepper .icons {
+  background-color: #333b48;
+  color: white;
+}
+
+.baseStepper .textCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 32px;
+  height: 20px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.textCont .name {
+  width: 57px;
+  height: 20px;
+
+  /* Text S/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  letter-spacing: -0.1px;
+
+  /* Primary/600 */
+
+  color: #437ef7;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 48px;
+  gap: 24px;
+  width: 648px;
+  height: 374px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 552px;
+  height: 74px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.inputField .label {
+  width: 552px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.inputField .inputBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+  width: 552px;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #dae0e6;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.theme-dark .inputField .inputBox {
+  background-color: #333b48;
+  border: 1px solid #2e3545;
+}
+
+.inputBox > input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 492px;
+  height: 22px;
+  background-color: transparent;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  border: none;
+}
+
+.theme-dark .inputBox > input {
+  color: white;
+}
+
+.inputBox .info {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  color: #5f6d7e;
+}
+
+.inputSection .passwordSec {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 552px;
+  height: 102px;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.passwordSec .inputField1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 268px;
+  height: 102px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.inputField1 .inputBox {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+
+  width: 268px;
+  height: 46px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  /* Shadow/XSM */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+  border-radius: 6px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.theme-dark .inputField1 .inputBox {
+  background-color: #333b48;
+  border: 1px solid #2e3545;
+}
+
+.inputField1 .inputBox > input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 208px;
+  height: 22px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.theme-dark .inputField1 .inputBox > input {
+  color: white;
+}
+
+.checkBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 552px;
+  height: 24px;
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.checkBox > input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px 0px;
+  gap: 10px;
+  width: 20px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.checkBox .textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 520px;
+  height: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.textContainer .text {
+  width: 520px;
+  height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 16px 48px;
+  gap: 10px;
+  height: 78px;
+  background: #fafbfc;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.theme-dark .bottomSection {
+  background-color: #252d3c;
+}
+
+.bottomSection .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  gap: 6px;
+  width: 96px;
+  height: 46px;
+  background: #437ef7;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+  border-radius: 6px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button .val {
+  width: 34px;
+  height: 22px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.button > svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+@media (max-width: 770px) {
+  .container {
+    padding: 100px 0px;
+    gap: 10px;
+    position: relative;
+    width: 768px;
+    height: 1024px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 48px 16px;
+    gap: 10px;
+    position: relative;
+    width: 375px;
+    height: 870px;
+    top: 0%;
+    left: 5%;
+  }
+
+  .details {
+    box-sizing: border-box;
+    gap: 24px;
+    width: 343px;
+    height: 694px;
+    align-self: stretch;
+  }
+
+  .details .upperSection {
+    padding: 12px 24px;
+    height: 84px;
+  }
+
+  .stepper {
+    width: 295px;
+    height: 60px;
+  }
+
+  .stepper .dividerStepper {
+    width: 47.67px;
+    height: 32px;
+  }
+
+  .inputSection {
+    padding: 0px 24px;
+    gap: 16px;
+    width: 343px;
+    height: 492px;
+  }
+
+  .inputField {
+    width: 295px;
+    height: 74px;
+  }
+
+  .inputField .inputBox {
+    width: 295px;
+    height: 46px;
+  }
+
+  .inputField .label {
+    width: 295px;
+    height: 20px;
+  }
+
+  .inputBox > input {
+    width: 235px;
+    height: 22px;
+  }
+
+  .checkBox {
+    width: 295px;
+    height: 48px;
+    order: 4;
+  }
+
+  .checkBox .textContainer {
+    width: 263px;
+    height: 48px;
+  }
+
+  .textContainer .text {
+    width: 263px;
+    height: 48px;
+    letter-spacing: -0.1px;
+  }
+
+  .inputSection .passwordSec {
+    flex-direction: column;
+    height: 164px;
+    width: 295px;
+  }
+
+  .passwordSec .inputField1 {
+    width: 295px;
+    height: 74px;
+  }
+
+  .inputField1 .inputBox {
+    width: 295px;
+    height: 46px;
+  }
+
+  .bottomSection .button {
+    width: 208px;
+    height: 46px;
+  }
+}

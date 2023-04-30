@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect } from 'react';
+import Account from './Components/Onboarding/Account/Account';
+import ThemeProvider from './ThemeProvider';
 
 function App() {
+  useEffect(() => {
+    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.body.classList.add(prefersDarkMode ? 'theme-dark' : 'theme-light');
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <Account/>
+    </ThemeProvider>
   );
 }
+
 
 export default App;

@@ -1,0 +1,173 @@
+.updatePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.updatePageContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.555);
+}
+
+.theme-dark .updatePageContainer>div{
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.555);
+}
+
+.updatePageContainer > div > h1 {
+  font: 500 4.2vmax "Roboto";
+  text-decoration: underline;
+  height: 20%;
+}
+
+.updatePageContainer > div > img {
+  width: 20vmax;
+  height: 20vmax;
+  /* border-radius: 100%; */
+  transition: all 0.5s;
+}
+
+.updatePageContainer > div > img:hover {
+  transform: scale(1.05);
+}
+
+.updatePageContainer > div > a {
+  border: none;
+  background-color: tomato;
+  font: 400 1vmax "Roboto";
+  color: white;
+  text-decoration: none;
+  padding: 0.5vmax;
+  width: 30%;
+  margin: 4vmax;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.updatePageContainer > div > a:hover {
+  background-color: rgb(204, 78, 56);
+}
+
+.updatePageContainer > div > div {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5vmax;
+  box-sizing: border-box;
+}
+
+.updatePageContainer > div > div > h4 {
+  font: 400 1.2vmax "Roboto";
+}
+
+.updatePageContainer > div > div > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.updatePageContainer > div > div > form > input {
+  width: 50%;
+  margin: 1vmax;
+  padding: 1vmax;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.555);
+}
+
+.updatePageContainer > div > div > form > input[type="submit"] {
+  background-color: tomato;
+  color: white;
+  font: 400 1vmax "Roboto";
+  border: none;
+  border-radius: 5px;
+  padding: 1vmax;
+  width: 50%;
+  margin: 1vmax;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.555);
+}
+
+.updatePageContainer > div > div > form > input[type="submit"]:hover {
+  background-color: rgb(204, 78, 56);
+}
+
+.updatePageContainer > div > div > form > input[type="file"] {
+  width: 50%;
+  margin: 1vmax;
+  padding: 1vmax;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.555);
+}
+
+.updatePageContainer > div > div > form > input[type="file"]:hover {
+  background-color: rgb(204, 78, 56);
+}
+
+.updatePageContainer > div > div > form > input[type="file"]::-webkit-file-upload-button {
+  background-color: tomato;
+  color: white;
+  font: 400 1vmax "Roboto";
+  border: none;
+  border-radius: 5px;
+  padding: 1vmax;
+  width: 50%;
+  margin: 1vmax;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.555);
+}
+
+.updatePage > form{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.Label{
+    font: 400 2vmax "Roboto";
+    padding: 0px 10px;
+}
+
+.updatePageInput{
+    width: 50%;
+    height: 2rem;
+    margin: 14px 0px;
+}
+
+.updatePageInput > input[type="file"]{
+    width: 70%;
+    height: 2rem;
+}
+.updatePageInput > input[type="text"]{
+    width: 70%;
+    height: 2rem;
+}
+
+.updatePageForm>img{
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin: 2rem 0px;
+    font-size: 1.2rem;
+    background-color: #437ef7;
+    color: white;
+}

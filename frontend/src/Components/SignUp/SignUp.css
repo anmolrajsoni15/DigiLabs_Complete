@@ -16,16 +16,22 @@
 }
 
 .logo {
-  width: 192px;
-  height: 48px;
-  flex: none;
+  width: 220px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   order: 0;
   flex-grow: 0;
 }
 
-.theme-dark .logo {
-  filter: invert(100%);
+.logo > img{
+  height: 100%;
 }
+
+/* .theme-dark .logo {
+  filter: invert(100%);
+} */
 
 .details {
   display: flex;
@@ -473,6 +479,12 @@ input:focus {
   flex: none;
   order: 0;
   flex-grow: 0;
+  border: none;
+}
+
+.bottomSection .button:hover {
+  cursor: pointer;
+  background-color: #3f77f3;
 }
 
 .button .val {
@@ -494,6 +506,7 @@ input:focus {
   height: 20px;
   flex: none;
   order: 2;
+  color: white;
   flex-grow: 0;
 }
 

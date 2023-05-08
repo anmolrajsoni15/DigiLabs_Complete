@@ -108,7 +108,7 @@ function SignUp() {
                     type="text"
                     placeholder="Name"
                     required
-                    value={user && user.name ? user.name : name}
+                    value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
                   <div className="info">
@@ -123,7 +123,7 @@ function SignUp() {
                     type="email"
                     placeholder="username@xyz"
                     required
-                    value={user && user.email ? user.email : email}
+                    value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                   <div className="info">

@@ -22,13 +22,13 @@ function Profile() {
   };
 
   useEffect(() => {
-    if(user && user.avatar){
-        setAvatar(user.avatar.url);
-    }
     if (isAuthenticated === false) {
       navigate("/signup");
     }
-  }, [isAuthenticated, navigate]);
+    if(user && user.avatar){
+        setAvatar(user.avatar.url);
+    }
+  }, [user, isAuthenticated, navigate]);
 
   return (
     <>

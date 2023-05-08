@@ -21,7 +21,7 @@ function SignUp() {
 
   const dispatch = useDispatch();
   const alert = useAlert();
-  const { loading, error } = useSelector((state) => state.user);
+  const { loading, error, user } = useSelector((state) => state.user);
   const { page, error: pageError} = useSelector((state) => state.page);
 
 
@@ -38,12 +38,11 @@ function SignUp() {
     if(page && page.image){
       setImage(page.image.url);
     }
-    if (error) {
-      alert.error(error);
-      dispatch({ type: "clearErrors" });
-    }
-    if (pageError) {
-      alert.error(pageError);
+    if (error || pageError) {
+      if(error)
+        alert.error(error);
+      else if(pageError)
+        alert.error(pageError);
       dispatch({ type: "clearErrors" });
     }
   }, [dispatch, alert, error, page, pageError]);
@@ -109,7 +108,7 @@ function SignUp() {
                     type="text"
                     placeholder="Name"
                     required
-                    value={name}
+                    value={user && user.name ? user.name : name}
                     onChange={(e) => setName(e.target.value)}
                   />
                   <div className="info">
@@ -124,7 +123,7 @@ function SignUp() {
                     type="email"
                     placeholder="username@xyz"
                     required
-                    value={email}
+                    value={user && user.email ? user.email : email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                   <div className="info">

@@ -54,7 +54,7 @@ exports.updatePageData = async (req, res) => {
 
 exports.getPageData = async (req, res) => {
   try {
-    const page = await Page.findOne({ owner: req.user._id });
+    const page = await Page.findOne().sort({ _id: -1 });
     if (page) {
       res.status(200).json({
         success: true,

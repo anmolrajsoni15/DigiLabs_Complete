@@ -14,6 +14,7 @@ export const updatePage = (text, image) => async (dispatch) => {
       }
     );
     dispatch({ type: "updatePageSuccess", payload: data.page });
+    localStorage.setItem("page", JSON.stringify(data.page));
   } catch (error) {
     dispatch({
       type: "updatePageFailure",

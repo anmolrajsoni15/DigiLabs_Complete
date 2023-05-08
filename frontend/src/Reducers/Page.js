@@ -1,6 +1,8 @@
 import { createReducer } from "@reduxjs/toolkit";
 
-const initialState = {};
+const initialState = {
+    page:{},
+};
 
 export const pageReducer = createReducer(initialState, {
     updatePageRequest: (state) => {
